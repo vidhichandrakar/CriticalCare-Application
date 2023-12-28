@@ -34,7 +34,7 @@
 }
 .rightTopBox{
   width:70%;
-  height: 40%;
+  /* height: 40%; */
   margin-top: 5%;
   /* background-color: red; */
 }
@@ -52,8 +52,9 @@ font-size: 1em !important;
 margin-top: 3% !important;
 }
 .rightBottomBox{
-  height:60%;
+  height:80%;
   width:80%;
+  margin-top: 25% !important;
   /* background-color: red; */
 }
 .loginButton{

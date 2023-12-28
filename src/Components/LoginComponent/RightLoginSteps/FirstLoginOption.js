@@ -1,6 +1,7 @@
 import { Button ,Box, Typography} from "@mui/material";
 import React from "react";
 import { createTheme ,ThemeProvider } from '@mui/material/styles';
+import RightTextBox from "./RightTextBox";
 
 const theme = createTheme({
   palette: {
@@ -14,7 +15,9 @@ const theme = createTheme({
 });
 const FirstLoginOption =()=>{
   return(
-   <Box className="rightBottomBox">
+    <>
+    <RightTextBox/>
+    <Box className="rightBottomBox">
     <Typography className="loginText">Please Select the method of login/signup</Typography>
     <ThemeProvider theme={theme}> 
     <Button variant="outlined" className="loginButton" color="ochre"><span>Continue with {" "} <b> {"  "} Mobile Number</b></span>
@@ -23,6 +26,7 @@ const FirstLoginOption =()=>{
     </Button>
     </ThemeProvider> 
    </Box>
+   </>
   )
 }
 export default FirstLoginOption;
