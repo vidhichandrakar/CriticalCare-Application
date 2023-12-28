@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Box, Typography } from "@mui/material";
-
 import dekstopImg from "../../Images/dekstopImg.jpg";
 const LeftComponent =({})=>{
   return(

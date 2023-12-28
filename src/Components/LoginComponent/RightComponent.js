@@ -9,8 +9,8 @@ import RightSignup from "../SignupComponent/RightSignup"
       <Box className="rightTopBox">
        <img src={Logo} className="rightLogo"/>
       </Box>
-      <FirstLoginOption/>
-      {/* <RightSignup /> */}
+      {/* <FirstLoginOption/> */}
+      <RightSignup />
     </Box>
   )
 }
