@@ -1,74 +1,98 @@
-.loginBox{
+
+.leftLoginImage {
+  width: 100%;
+  height: 90vh;
+  align-items: flex-start;
+}
+.Leftcomponent {
+  height: 100%;
+  width: 70%;
+}
+.rightLogo {
+  width: 50%;
+}
+.rightBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightTopBox {
+  width: 70%;
+  /* height: 40%; */
+  margin-top: 5%;
+  /* background-color: red; */
+}
+.rightTopHead {
+  font-size: 1.8em !important;
+  margin-top: 3% !important;
+}
+.rightTopHead2 {
+  font-size: 1.8em !important;
+  font-weight: 600 !important;
+}
+
+.rightTopHead3 {
+  font-size: 1em !important;
+  margin-top: 3% !important;
+}
+.rightBottomBox {
+  height: 80%;
+  width: 80%;
+  margin-top: 25% !important;
+  /* background-color: red; */
+}
+.loginButton {
+  width: 100%;
+  height: 15%;
+  color: black !important;
+  border: 2px solid #000 !important;
+  text-transform: none !important;
+  font-size: 1.2em !important;
+  margin-top: 6% !important;
+}
+.loginText {
+  font-size: 1em !important;
+  margin-top: 5% !important;
+}
+.Signup {
+  font-size: 1.6rem !important;
+}
+.otpButton {
+  padding: 16px 0px !important;
+  background-color: #9b9b9b !important;
+  color: white !important;
+  text-transform: none !important;
+}
+.BoxShadow{
+  box-shadow: 1px 1px 4px 2px #ecebeb !important;
+}
+@media (min-width:951px){
+  .loginBox {
   box-shadow: 1px 1px 4px 2px #ecebeb !important;
   border-radius: 10px 10px 10px 10px;
   width: 65%;
   height: 90vh;
   display: flex;
   flex-direction: row;
-  
- 
 }
-.MainBox{
- height: 100vh;
+.MainBox {
+  height: 100vh;
   display: flex !important;
   margin: auto !important;
   align-items: center;
   justify-content: center;
 }
-.leftLoginImage{
-  width:100%;
- height:90vh;
- align-items:flex-start;
 }
-.Leftcomponent{
-  height: 100%;
-  width: 70%;
+@media (max-width:950px){
+  .leftLoginImage {
+    display: none;
+  }
+  .Leftcomponent{
+    display: none;
+  }
+  .rightLogo {
+    width: 100%;
 }
-.rightLogo{
-  width:50%;
-}
-.rightBox{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.rightTopBox{
-  width:70%;
-  /* height: 40%; */
-  margin-top: 5%;
-  /* background-color: red; */
-}
-.rightTopHead{
-   font-size: 1.8em !important;
-   margin-top: 3% !important;
-}
-.rightTopHead2{
-  font-size: 1.8em !important;
-  font-weight: 600 !important;
-}
-
-.rightTopHead3{
-font-size: 1em !important;
-margin-top: 3% !important;
-}
-.rightBottomBox{
-  height:80%;
-  width:80%;
-  margin-top: 25% !important;
-  /* background-color: red; */
-}
-.loginButton{
-  width:100%;
-  height: 15%;
-  color:black !important;
-  border: 2px solid #000 !important;
-  text-transform:none !important;
-font-size: 1.2em !important;
-margin-top: 6% !important;
-}
-.loginText{
-  font-size: 1em !important;
-  margin-top: 5% !important;
 }
 .indiaImg{
   width: 25px; 
