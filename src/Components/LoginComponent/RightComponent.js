@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Box, Typography } from "@mui/material";
 import Logo from "../../Images/Logo.png"
 import FirstLoginOption from "./RightLoginSteps/FirstLoginOption";
+import PhonneNumberLogin from "./RightLoginSteps/PhoneNumberLogin";
  const RightComponent =({})=>{
   return(
     <Box className="rightBox">
@@ -9,7 +10,8 @@ import FirstLoginOption from "./RightLoginSteps/FirstLoginOption";
        <img src={Logo} className="rightLogo"/>
         
       </Box>
-      <FirstLoginOption/>
+      {/* <FirstLoginOption/> */}
+      <PhonneNumberLogin/>
     </Box>
   )
 }
