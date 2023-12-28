@@ -20,13 +20,7 @@ function EmailLoginOption() {
   return (
     <div>
       <RightTextBox />
-      <Box
-      sx={{
-        marginTop: "25%",
-        width: 400,
-        maxWidth: '100%',
-      }}
-    >
+      <Box className = "BoxWidth">
         
     <Typography className="loginText">Please Select the method of login/signup</Typography>
     <BoxHeight />

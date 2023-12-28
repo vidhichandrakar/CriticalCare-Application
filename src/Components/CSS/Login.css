@@ -66,6 +66,11 @@
 .BoxShadow{
   box-shadow: 1px 1px 4px 2px #ecebeb !important;
 }
+.BoxWidth{
+  margin-top: 25% !important;
+  width: 400px !important;
+  max-width: 100% !important;
+}
 @media (min-width:951px){
   .loginBox {
   box-shadow: 1px 1px 4px 2px #ecebeb !important;
@@ -92,5 +97,8 @@
   }
   .rightLogo {
     width: 100%;
+}
+.BoxWidth {
+  width: 350px !important;
 }
 }
