@@ -3,6 +3,8 @@ import { Box, Typography } from "@mui/material";
 import Logo from "../../Images/Logo.png"
 import FirstLoginOption from "./RightLoginSteps/FirstLoginOption";
 import RightSignup from "../SignupComponent/RightSignup"
+import EmailLoginOption from "./RightLoginSteps/EmailLoginOption";
+
  const RightComponent =({})=>{
   return(
     <Box className="rightBox">
@@ -10,7 +12,8 @@ import RightSignup from "../SignupComponent/RightSignup"
        <img src={Logo} className="rightLogo"/>
       </Box>
       {/* <FirstLoginOption/> */}
-      <RightSignup />
+      {/* <RightSignup /> */}
+      <EmailLoginOption />
     </Box>
   )
 }

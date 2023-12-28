@@ -33,29 +33,31 @@ const handleChange = (e) => {
       <RedBar />
       <RedBar />
       <RedBar />
-      <TextField fullWidth size="small" label="Full Name" id="fullWidth" />
+      <TextField fullWidth size="small" label="Full Name" id="fullWidth" className="BoxShadow" />
       <RedBar />
-      <TextField fullWidth size="small" label="Email Id" id="fullWidth" />
+      <TextField fullWidth size="small" label="Email Id" id="fullWidth" className="BoxShadow" />
       <RedBar />
       <TextField
         fullWidth
-        maxLength={10}
+        inputProps = {{maxLength:10}}
         size="small"
         label="Phone Number"
         id="fullWidth"
         value={number} 
         onChange={handleChange}
+        className="BoxShadow"
       />
       <RedBar />
-      <TextField fullWidth size="small" label="Hospital Name" id="fullWidth" />
+      <TextField fullWidth size="small" label="Hospital Name" id="fullWidth" className="BoxShadow"/>
       <RedBar />
-      <TextField fullWidth size="small" label="Qualification" id="fullWidth" />
+      <TextField fullWidth size="small" label="Qualification" id="fullWidth" className="BoxShadow"/>
       <RedBar />
       <TextField
         fullWidth
         size="small"
         label="Current Affillation"
         id="fullWidth"
+        className="BoxShadow"
       />
       <RedBar />
       <RedBar />

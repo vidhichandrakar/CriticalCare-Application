@@ -63,6 +63,9 @@
   color: white !important;
   text-transform: none !important;
 }
+.BoxShadow{
+  box-shadow: 1px 1px 4px 2px #ecebeb !important;
+}
 @media (min-width:951px){
   .loginBox {
   box-shadow: 1px 1px 4px 2px #ecebeb !important;
