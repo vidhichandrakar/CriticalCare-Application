@@ -9,7 +9,7 @@ const PhonneNumberLogin =({})=>{
     <>
     <RightTextBox/>
     <Box className="rightBottomBox">
-    <Typography className="loginText">Please Select the method of login/signup</Typography>
+    <Typography className="loginText">Please enter your mobile number to login/signup</Typography>
      
     <TextField
         id="input-with-icon-textfield"
