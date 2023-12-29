@@ -11,6 +11,7 @@ import PhoneNoVerification from "./RightLoginSteps/PhoneNoVerification";
   const [loginOption,setLoginOption] = useState("");
   const [loginValue,setLoginValue]=useState("")
   const handleLoginOption =(type,value)=>{
+    console.log("value",value,type)
     setLoginOption(type);
     setLoginValue(value)
   }
@@ -20,12 +21,13 @@ import PhoneNoVerification from "./RightLoginSteps/PhoneNoVerification";
       <Box className="rightTopBox" >
       <a href="/"> <img src={Logo} className="rightLogo" /></a>
       </Box>
-      {loginOption==="PhoneNumber" ?
-      <PhonneNumberLogin handleLoginOption={handleLoginOption}/>
-      :loginOption==="getOtpPhone"?
+      {loginOption==="PhoneNumber" ? <PhonneNumberLogin handleLoginOption={handleLoginOption}/>
+      :loginOption==="getOtpPhone" || loginOption==="emailLoginOtp"?
       <PhoneNoVerification displayValue={loginValue} handleLoginOption={handleLoginOption}/>:
       loginOption==="continueOtp"?
       <RightSignup handleLoginOption={handleLoginOption}/>
+      :loginOption==="emailLogin"?
+      <EmailLoginOption handleLoginOption={handleLoginOption}/>
       :<FirstLoginOption handleLoginOption={handleLoginOption}/>}
     </Box>
   )
