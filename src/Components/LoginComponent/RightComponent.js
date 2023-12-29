@@ -20,11 +20,13 @@ import PhoneNoVerification from "./RightLoginSteps/PhoneNoVerification";
       <Box className="rightTopBox" >
       <a href="/"> <img src={Logo} className="rightLogo" /></a>
       </Box>
-      {loginOption==="PhoneNumber" ?<PhonneNumberLogin handleLoginOption={handleLoginOption}/>:
-      loginOption==="getOtpPhone"?<PhoneNoVerification displayValue={loginValue} handleLoginOption={handleLoginOption}/>:
-      loginOption==="continueOtp"?<RightSignup handleLoginOption={handleLoginOption}/>:<FirstLoginOption handleLoginOption={handleLoginOption}/>}
-      {/* <RightSignup /> */}
-      {/* <EmailLoginOption /> */}
+      {loginOption==="PhoneNumber" ?
+      <PhonneNumberLogin handleLoginOption={handleLoginOption}/>
+      :loginOption==="getOtpPhone"?
+      <PhoneNoVerification displayValue={loginValue} handleLoginOption={handleLoginOption}/>:
+      loginOption==="continueOtp"?
+      <RightSignup handleLoginOption={handleLoginOption}/>
+      :<FirstLoginOption handleLoginOption={handleLoginOption}/>}
     </Box>
   )
 }
