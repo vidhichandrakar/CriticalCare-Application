@@ -53,94 +53,70 @@ export default function RightSignup({ handleLoginOption }) {
         maxWidth: "80%",
         textAlign: "center",
       }}
-    ><RedBar />
+    >
       <Typography className="loginText Signup">Signup</Typography>
-      <RedBar />
-      <RedBar />
-      <RedBar />
+     
       <TextField
-        InputLabelProps={{
-          className: "textField",
-        }}
-        inputProps={{className: "textField" }}
-        sx={{ textAlign: "center !important" }}
+        inputProps={{ className:"textField" }}
+        
+        sx={{ textAlign: "center !important" ,marginTop:"15% !important" }}
         fullWidth
         size="small"
-        label="Full Name"
+        placeholder="Full Name"
         id="fullWidth"
         className="BoxShadow"
         onChange={(event) => handleTextChange("Name", event.target.value)}
       />
-      <RedBar />
       <TextField
-        inputProps={{className: "textField" }}
-        InputLabelProps={{
-          className: "textField",
-        }}
+       inputProps={{  className:"textField" }}
         sx={{ textAlign: "center !important" }}
         fullWidth
         size="small"
-        label="Email Id"
+        placeholder="Email Id"
         id="fullWidth"
         className="BoxShadow"
         onChange={(event) => handleTextChange("emailId", event.target.value)}
       />
-      <RedBar />
       <TextField
         fullWidth
-        InputLabelProps={{
-          className: "textField",
-        }}
-        inputProps={{ maxLength: 10, className: "textField" }}
+        inputProps={{ maxLength: 10, className:"textField" }}
         size="small"
-        label="Phone Number"
+        placeholder="Phone Number"
         id="fullWidth"
         sx={{ textAlign: "center !important" }}
         value={formData.number}
         onChange={(event) => handleTextChange("number", event.target.value)}
         className="BoxShadow"
       />
-      <RedBar />
       <TextField
-        InputLabelProps={{
-          className: "textField",
-        }}
-        inputProps={{className: "textField" }}
-        sx={{ textAlign: "center !important" }}
+        inputProps={{ className:"textField" }}
+        sx={{ textAlign: "center !important"}}
         fullWidth
         size="small"
-        label="Hospital Name"
+        placeholder="Hospital Name"
         id="fullWidth"
         className="BoxShadow"
         onChange={(event) =>
           handleTextChange("hospitalName", event.target.value)
         }
       />
-      <RedBar />
       <TextField
-        InputLabelProps={{
-          className: "textField",
-        }}
-        inputProps={{className: "textField" }}
+       inputProps={{ className:"textField" }}
         sx={{ textAlign: "center !important" }}
         fullWidth
         size="small"
-        label="Qualification"
+        placeholder="Qualification"
         id="fullWidth"
         className="BoxShadow"
         onChange={(event) =>
           handleTextChange("qualification", event.target.value)
         }
       />
-      <RedBar />
       <TextField
         fullWidth
-        inputProps={{className: "textField" }}
         size="small"
-        label="Current Affillation"
-        InputLabelProps={{
-          className: "textField",
-        }}
+        placeholder="Current Affillation"
+        inputProps={{ className:"textField" }}
         sx={{ textAlign: "center !important" }}
         id="fullWidth"
         className="BoxShadow"
@@ -148,8 +124,6 @@ export default function RightSignup({ handleLoginOption }) {
           handleTextChange("affillation", event.target.value)
         }
       />
-      <RedBar />
-      <RedBar />
       <Button
         fullWidth
         variant="contained"

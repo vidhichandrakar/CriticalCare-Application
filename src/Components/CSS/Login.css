@@ -58,17 +58,22 @@
 }
 .Signup {
   font-size: 1.6rem !important;
+  margin-top: 0% !important;
 }
 .otpButton {
   padding: 12px 0px !important;
   /* background-color: #9b9b9b !important; */
   color: white !important;
   text-transform: none !important;
+  margin-top: 5% !important;
 }
 .BoxShadow{
   box-shadow: 1px 1px 4px 2px #d1d0d0 !important;
   text-align: center !important;
   border-radius: 7px !important;
+  font-size: 0.7rem !important;
+  margin-top: 3% !important;
+  color:#6a6868 !important;
 }
 .BoxWidth{
   margin-top: 25% !important;
@@ -175,12 +180,13 @@
   color: #000 !important;
 }
 .textField{
-  padding:  5px 0px 21px 0px  !important;
-   font-size: 0.7rem !important;
+  padding:  11px 15px 13px  15px  !important;
+   font-size: 0.8rem !important;
    font-weight: 500 !important;
-   text-align: center !important;
-   color:#979393 !important;
+   color:#747373 !important;
+  justify-content: center !important;
    border-radius: 7px !important;
+  
 
 }
 .boxOtpWidth{
