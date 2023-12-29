@@ -10,11 +10,11 @@ import React, { useState } from "react";
 import RightTextBox from "./RightTextBox";
 import India from "../../../Images/India.png";
 
-const PhonneNumberLogin = ({}) => {
-  const [number, setNumber] = useState();
+const PhonneNumberLogin = ({handleLoginOption}) => {
+  const [number, setNumber] = useState(null);
 
   const handleChange = (e) => {
-    const value = e.target.value.replace(/\D/g, "");
+    const value = e.replace(/\D/g, "");
     setNumber(value);
   };
 
@@ -34,7 +34,7 @@ const PhonneNumberLogin = ({}) => {
           variant="outlined"          
         inputProps = {{maxLength:10}}
           value={number} 
-          onChange={handleChange}
+          onChange={(event)=>handleChange(event.target.value)}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -51,6 +51,9 @@ const PhonneNumberLogin = ({}) => {
             ),
           }}
         />
+        <Button fullWidth variant="contained" onClick={()=>handleLoginOption("getOtpPhone",number)} disabled={number!=null && number!=""?false:true} className="otpButton BoxShadow" sx={{marginTop:"5%"}}>
+        Get OTP
+      </Button>
       </Box>
     </>
   );

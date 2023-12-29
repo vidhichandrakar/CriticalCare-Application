@@ -1,11 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 // import "./../CSS/Login.css";
 import Button from "@mui/material/Button";
 
-const PhoneNoVerification = ({}) => {
+const PhoneNoVerification = ({displayValue,handleLoginOption}) => {
+  const [otpValue,setOtp] = useState({ value: '', otp1: "", otp2: "", otp3: "", otp4: "", otp5: "",otp6:"", disable: true });
+  const handleOtp = (type,value)=>{
+   let prevOtp = {...otpValue};
+    prevOtp[type]= value ;
+    if(prevOtp.otp1!="" && prevOtp.otp2!="" && prevOtp.otp3!=""&& prevOtp.otp4!="" && prevOtp.otp5!="" &&prevOtp.otp6!=""){
+      prevOtp.disable=false;
+    }
+    else{
+      prevOtp.disable=true;
+    }
+    setOtp( prevOtp);
+  }
   return (
     <>
       <Box className="rightBox">
@@ -15,7 +27,7 @@ const PhoneNoVerification = ({}) => {
           Enter the Code sent to your Phone{" "}
         </Typography>
         <Typography className="verificationHead3">
-          ...phone number will be displayed here...{" "}
+        {displayValue}
         </Typography>
       </Box>
 
@@ -32,39 +44,69 @@ const PhoneNoVerification = ({}) => {
             id="outlined-basic"
             variant="outlined"
             className="OTPBox"
+            onChange={(event)=>handleOtp("otp1",event.target.value)}
+            inputProps={{
+              maxLength:1,
+              className:"boxOtpWidth"
+            }}
           />
           <TextField
             id="outlined-basic"
             variant="outlined"
             className="OTPBox"
+            onChange={(event)=>handleOtp("otp2",event.target.value)}
+            inputProps={{
+              maxLength:1,
+              className:"boxOtpWidth"
+            }}
           />
           <TextField
             id="outlined-basic"
             variant="outlined"
             className="OTPBox"
+            onChange={(event)=>handleOtp("otp3",event.target.value)}
+            inputProps={{
+              maxLength:1,
+              className:"boxOtpWidth"
+            }}
           />
           <TextField
             id="outlined-basic"
             variant="outlined"
             className="OTPBox"
+            onChange={(event)=>handleOtp("otp4",event.target.value)}
+            inputProps={{
+              maxLength:1,
+              className:"boxOtpWidth"
+            }}
           />
           <TextField
             id="outlined-basic"
             variant="outlined"
             className="OTPBox"
+            onChange={(event)=>handleOtp("otp5",event.target.value)}
+            inputProps={{
+              maxLength:1,
+              className:"boxOtpWidth"
+            }}
           />
           <TextField
             id="outlined-basic"
             variant="outlined"
             className="OTPBox"
+            onChange={(event)=>handleOtp("otp6",event.target.value)}
+            inputProps={{
+              maxLength:1,
+              className:"boxOtpWidth"
+            }}
           />
         </Box>
-
         <Button
           variant="contained"
           fullWidth
-          disabled
+          disabled={otpValue.disable}
           className="continueButton"
+          onClick={()=>handleLoginOption("continueOtp")}
         >
           <p> Continue </p>
         </Button>
