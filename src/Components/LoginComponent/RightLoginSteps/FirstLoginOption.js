@@ -22,7 +22,7 @@ const FirstLoginOption =({handleLoginOption})=>{
     {/* <ThemeProvider theme={theme}>  */}
     <Button variant="outlined" className="loginButton"  onClick={()=>handleLoginOption("PhoneNumber")}><span>Continue with <b> Mobile Number</b></span>
     </Button>
-    <Button variant="outlined" className="loginButton"  onClick={()=>handleLoginOption("EmailId")}><span>Continue with <b> Email ID</b></span>
+    <Button variant="outlined" className="loginButton"  onClick={()=>handleLoginOption("emailLogin","")}><span>Continue with <b> Email ID</b></span>
     </Button>
     {/* </ThemeProvider>  */}
    </Box>
