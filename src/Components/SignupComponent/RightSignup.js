@@ -9,74 +9,109 @@ function RedBar() {
   return (
     <Box
       sx={{
-        height: 10,
+        height: 15,
       }}
     />
   );
 }
 
-export default function RightSignup({handleLoginOption}) {
-    const [formData,setFormData]=useState({Name:"",emailId:"",number:"",hospitalName:"",qualification:"",affillation:"",disabled:true})
+export default function RightSignup({ handleLoginOption }) {
+  const [formData, setFormData] = useState({
+    Name: "",
+    emailId: "",
+    number: "",
+    hospitalName: "",
+    qualification: "",
+    affillation: "",
+    disabled: true,
+  });
 
-const handleTextChange =(type,value)=>{
-   let formDataValue = {...formData};
-   if(type=="number"){
-   value = value.replace(/\D/g, "");
-   }
-   formDataValue[type]=value;
-   if(formDataValue.Name!="" && formDataValue.emailId!="" &&
-    formDataValue.hospitalName!="" && formData.number!="" &&
-     formDataValue.qualification!="" && formDataValue.affillation!=""){
-    formDataValue.disabled=false;
-   }
-   else{
-    formDataValue.disabled=true;
-   }
-  setFormData(formDataValue);
-
-}
+  const handleTextChange = (type, value) => {
+    let formDataValue = { ...formData };
+    if (type == "number") {
+      value = value.replace(/\D/g, "");
+    }
+    formDataValue[type] = value;
+    if (
+      formDataValue.Name != "" &&
+      formDataValue.emailId != "" &&
+      formDataValue.hospitalName != "" &&
+      formData.number != "" &&
+      formDataValue.qualification != "" &&
+      formDataValue.affillation != ""
+    ) {
+      formDataValue.disabled = false;
+    } else {
+      formDataValue.disabled = true;
+    }
+    setFormData(formDataValue);
+  };
   return (
     <Box
       sx={{
         width: 500,
         maxWidth: "80%",
-        textAlign:"center"
+        textAlign: "center",
       }}
     >
       <Typography className="loginText Signup">Signup</Typography>
-      <RedBar />
-      <RedBar />
-      <RedBar />
-      <TextField fullWidth label="Full Name" size="small" id="fullWidth" className="BoxShadow" onChange={(event)=>handleTextChange("Name",event.target.value)}/>
-      <RedBar />
-      <TextField fullWidth label="Email Id" size="small" id="fullWidth" className="BoxShadow" onChange={(event)=>handleTextChange("emailId",event.target.value)}/>
-      <RedBar />
+     
+      <TextField
+        inputProps={{ className:"textField" }}
+        
+        sx={{ textAlign: "center !important" ,marginTop:"15% !important" }}
+        fullWidth
+        size="small"
+        placeholder="Full Name"
+        id="fullWidth"
+        className="BoxShadow"
+        onChange={(event) => handleTextChange("Name", event.target.value)}
+      />
+      <TextField
+       inputProps={{  className:"textField" }}
+        sx={{ textAlign: "center !important" }}
+        fullWidth
+        size="small"
+        placeholder="Email Id"
+        id="fullWidth"
+        className="BoxShadow"
+        onChange={(event) => handleTextChange("emailId", event.target.value)}
+      />
       <TextField
         fullWidth
-        inputProps = {{maxLength:10}}
+        inputProps={{ maxLength: 10, className:"textField" }}
         size="small"
-        label="Phone Number"
+        placeholder="Phone Number"
         id="fullWidth"
-        value={formData.number} 
-        onChange={(event)=>handleTextChange("number",event.target.value)}
+        sx={{ textAlign: "center !important" }}
+        value={formData.number}
+        onChange={(event) => handleTextChange("number", event.target.value)}
         className="BoxShadow"
       />
       <RedBar />
-      <TextField fullWidth label="Hospital Name" size="small" id="fullWidth" className="BoxShadow"onChange={(event)=>handleTextChange("hospitalName",event.target.value)}/>
+      <TextField fullWidth size="small" label="Hospital Name" id="fullWidth" className="BoxShadow"onChange={(event)=>handleTextChange("hospitalName",event.target.value)}/>
       <RedBar />
-      <TextField fullWidth label="Qualification" size="small" id="fullWidth" className="BoxShadow" onChange={(event)=>handleTextChange("qualification",event.target.value)}/>
+      <TextField fullWidth size="small" label="Qualification" id="fullWidth" className="BoxShadow" onChange={(event)=>handleTextChange("qualification",event.target.value)}/>
       <RedBar />
       <TextField
         fullWidth
         size="small"
-        label="Current Affillation"
+        placeholder="Current Affillation"
+        inputProps={{ className:"textField" }}
+        sx={{ textAlign: "center !important" }}
         id="fullWidth"
         className="BoxShadow"
-        onChange={(event)=>handleTextChange("affillation",event.target.value)}
+        onChange={(event) =>
+          handleTextChange("affillation", event.target.value)
+        }
       />
-      <RedBar />
-      <RedBar />
-      <Button fullWidth variant="contained" disabled={formData.disabled} className="otpButton" onClick={()=>handleLoginOption("getOtpPhone",formData.number)}>
+      <Button
+        fullWidth
+        variant="contained"
+        disabled={formData.disabled}
+        className="otpButton"
+        onClick={() => handleLoginOption("getOtpPhone", formData.number)}
+      >
         Get OTP
       </Button>
     </Box>

@@ -20,32 +20,32 @@ function SideBar({openSidebarToggle, OpenSidebar}) {
         </div>
 
         <ul className='sidebar-list'>
-            <li className='sidebar-list-item'>
+            <li className='sidebar-list-item BottomLine'>
                 <a href="">
                     <MenuBookIcon className='icon'/> All Courses
                 </a>
             </li>
-            <li className='sidebar-list-item'>
+            <li className='sidebar-list-item BottomLine'>
                 <a href="">
                     <ChatIcon className='icon'/> Chat
                 </a>
             </li>
-            <li className='sidebar-list-item'>
+            <li className='sidebar-list-item BottomLine'>
                 <a href="">
                     <InfoIcon className='icon'/> About Us
                 </a>
             </li>
-            <li className='sidebar-list-item'>
+            <li className='sidebar-list-item BottomLine'>
                 <a href="">
                     <PhoneIcon  className='icon'/> Contact Us
                 </a>
             </li>
-            <li className='sidebar-list-item'>
+            <li className='sidebar-list-item BottomLine'>
                 <a href="">
                     <VerifiedUserIcon className='icon'/> Privacy Policy
                 </a>
             </li>
-            <li className='sidebar-list-item'>
+            <li className='sidebar-list-item BottomLine'>
                 <a href="">
                     <DescriptionIcon className='icon'/> Terms & Conditions
                 </a>
