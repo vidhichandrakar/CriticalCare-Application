@@ -66,7 +66,9 @@
   text-transform: none !important;
 }
 .BoxShadow{
-  box-shadow: 1px 1px 4px 2px #ecebeb !important;
+  box-shadow: 1px 1px 4px 2px #d1d0d0 !important;
+  text-align: center !important;
+  border-radius: 7px !important;
 }
 .BoxWidth{
   margin-top: 25% !important;
@@ -172,8 +174,17 @@
   border-color:#000 !important;
   color: #000 !important;
 }
+.textField{
+  padding:  5px 0px 21px 0px  !important;
+   font-size: 0.7rem !important;
+   font-weight: 500 !important;
+   text-align: center !important;
+   color:#979393 !important;
+   border-radius: 7px !important;
+
+}
 .boxOtpWidth{
-  padding: 9.5px 14px !important;
+  padding: 10px 14px !important;
   border-color:#000 !important;
 }
 
