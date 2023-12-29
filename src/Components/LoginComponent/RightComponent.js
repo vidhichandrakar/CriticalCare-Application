@@ -13,7 +13,7 @@ import EmailLoginOption from "./RightLoginSteps/EmailLoginOption";
        <img src={Logo} className="rightLogo"/>
       </Box>
       {/* <FirstLoginOption/> */}
-      <PhonneNumberLogin/>
+      {/* <PhonneNumberLogin/> */}
       {/* <RightSignup /> */}
       {/* <EmailLoginOption /> */}
     </Box>

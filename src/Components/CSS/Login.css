@@ -71,6 +71,14 @@
   width: 400px !important;
   max-width: 100% !important;
 }
+.otpNumberBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    /* max-Width: 100%; */
+}
 @media (min-width:951px){
   .loginBox {
   box-shadow: 1px 1px 4px 2px #ecebeb !important;
