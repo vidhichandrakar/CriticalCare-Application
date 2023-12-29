@@ -139,3 +139,44 @@
   font-weight: bold !important;
   color:#000 !important
 }
+
+
+
+
+/* PHONE NUMBER VERIFICATION */
+
+
+
+.verificationHead{
+  font-size: 1.8em !important;
+  font-weight: 600 !important;
+  margin-top: 15% !important;
+}
+
+.verificationHead2{
+  font-size: 0.7em !important;
+  margin-top: 3% !important;
+  margin: 12px 2px;
+}
+
+.verificationHead3{
+  font-size: 0.9em !important;
+  margin-top: 3% !important;
+}
+
+
+.OTPBox{
+  padding: 1px 64px;
+}
+
+.continueButton{
+  width: 33%;
+}
+
+.resendOTPButton{
+ margin-top: 6% !important;
+}
+
+.mt13{
+  margin-top: 13% !important;
+}

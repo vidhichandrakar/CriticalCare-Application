@@ -6,7 +6,7 @@ import RightTextBox from "./RightTextBox";
 const theme = createTheme({
   palette: {
     ochre: {
-      main: '#000',
+      // main: '#000',
       light: '#000',
       dark: '#000',
       contrastText: '#000',
@@ -20,9 +20,9 @@ const FirstLoginOption =()=>{
     <Box className="rightBottomBox">
     <Typography className="loginText">Please Select the method of login/signup</Typography>
     <ThemeProvider theme={theme}> 
-    <Button variant="outlined" className="loginButton" color="ochre"><span>Continue with {" "} <b> {"  "} Mobile Number</b></span>
+    <Button variant="outlined" className="loginButton" color="ochre"><span>Continue with <b> Mobile Number</b></span>
     </Button>
-    <Button variant="outlined" className="loginButton" color="ochre"><span>Continue with {" "} <b> {"  "} Email ID</b></span>
+    <Button variant="outlined" className="loginButton" color="ochre"><span>Continue with <b> Email ID</b></span>
     </Button>
     </ThemeProvider> 
    </Box>
