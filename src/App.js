@@ -6,8 +6,8 @@ import DashboardMain from './Components/DashboardComponents/DashboardMain';
 function App() {
   return (
     <div className="App">
-     <HomeComponent/>
-     {/* <DashboardMain /> */}
+     {/* <HomeComponent/> */}
+     <DashboardMain />
     </div>
   );
 }

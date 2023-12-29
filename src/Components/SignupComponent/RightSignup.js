@@ -47,9 +47,9 @@ const handleTextChange =(type,value)=>{
       <RedBar />
       <RedBar />
       <RedBar />
-      <TextField fullWidth size="small" label="Full Name" id="fullWidth" className="BoxShadow" onChange={(event)=>handleTextChange("Name",event.target.value)}/>
+      <TextField fullWidth label="Full Name" size="small" id="fullWidth" className="BoxShadow" onChange={(event)=>handleTextChange("Name",event.target.value)}/>
       <RedBar />
-      <TextField fullWidth size="small" label="Email Id" id="fullWidth" className="BoxShadow" onChange={(event)=>handleTextChange("emailId",event.target.value)}/>
+      <TextField fullWidth label="Email Id" size="small" id="fullWidth" className="BoxShadow" onChange={(event)=>handleTextChange("emailId",event.target.value)}/>
       <RedBar />
       <TextField
         fullWidth
@@ -62,9 +62,9 @@ const handleTextChange =(type,value)=>{
         className="BoxShadow"
       />
       <RedBar />
-      <TextField fullWidth size="small" label="Hospital Name" id="fullWidth" className="BoxShadow"onChange={(event)=>handleTextChange("hospitalName",event.target.value)}/>
+      <TextField fullWidth label="Hospital Name" size="small" id="fullWidth" className="BoxShadow"onChange={(event)=>handleTextChange("hospitalName",event.target.value)}/>
       <RedBar />
-      <TextField fullWidth size="small" label="Qualification" id="fullWidth" className="BoxShadow" onChange={(event)=>handleTextChange("qualification",event.target.value)}/>
+      <TextField fullWidth label="Qualification" size="small" id="fullWidth" className="BoxShadow" onChange={(event)=>handleTextChange("qualification",event.target.value)}/>
       <RedBar />
       <TextField
         fullWidth
