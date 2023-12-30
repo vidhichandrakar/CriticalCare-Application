@@ -51,9 +51,9 @@ function SideBar({openSidebarToggle, OpenSidebar}) {
                 </Link>
             </li>
             <li className='sidebar-list-item red'>
-                <a href="">
+            <Link to="/">
                     <LogoutIcon className='icon'/> Logout
-                </a>
+                </Link>
             </li>
         </ul>
     </aside>

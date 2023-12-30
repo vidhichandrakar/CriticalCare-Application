@@ -18,6 +18,9 @@ const PhoneNoVerification = ({displayValue,handleLoginOption,cameFrom}) => {
     }
     setOtp( prevOtp);
   }
+  const handleLoginType=()=>{
+    cameFrom!=="signUp"?handleLoginOption(cameFrom==="signUp"?"loggIn":"continueOtp"):window.location.href="AllCourses"
+  }
   return (
     <>
       <Box className="rightBox">
@@ -106,7 +109,7 @@ const PhoneNoVerification = ({displayValue,handleLoginOption,cameFrom}) => {
           fullWidth
           disabled={otpValue.disable}
           className="continueButton"
-          onClick={()=>handleLoginOption(cameFrom==="signUp"?"loggIn":"continueOtp")}
+          onClick={()=>handleLoginType()}
         >
           <p> Continue </p>
         </Button>
