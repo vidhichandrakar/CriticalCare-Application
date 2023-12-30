@@ -1,0 +1,32 @@
+.allPrivacyPolicy{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 2%;
+
+}
+
+.privacyPolicyHeading{
+    /* text-align: center; */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3rem !important;
+    font-weight: bold;
+    
+}
+
+.allExceptHeading{
+    font-size: small;
+}
+
+.firstHeading{
+    font-size:2rem;
+    font-weight:bold;
+    padding: 3% 0%;
+}
+
+.para{
+    font-size: x-large;
+}
+
+.insideButton{
+    font-size: x-large;
+}

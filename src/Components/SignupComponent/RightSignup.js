@@ -88,30 +88,11 @@ export default function RightSignup({ handleLoginOption }) {
         onChange={(event) => handleTextChange("number", event.target.value)}
         className="BoxShadow"
       />
-      <TextField
-        inputProps={{ className:"textField" }}
-        sx={{ textAlign: "center !important"}}
-        fullWidth
-        size="small"
-        placeholder="Hospital Name"
-        id="fullWidth"
-        className="BoxShadow"
-        onChange={(event) =>
-          handleTextChange("hospitalName", event.target.value)
-        }
-      />
-      <TextField
-       inputProps={{ className:"textField" }}
-        sx={{ textAlign: "center !important" }}
-        fullWidth
-        size="small"
-        placeholder="Qualification"
-        id="fullWidth"
-        className="BoxShadow"
-        onChange={(event) =>
-          handleTextChange("qualification", event.target.value)
-        }
-      />
+      <RedBar />
+      <TextField fullWidth size="small" label="Hospital Name" id="fullWidth" className="BoxShadow"onChange={(event)=>handleTextChange("hospitalName",event.target.value)}/>
+      <RedBar />
+      <TextField fullWidth size="small" label="Qualification" id="fullWidth" className="BoxShadow" onChange={(event)=>handleTextChange("qualification",event.target.value)}/>
+      <RedBar />
       <TextField
         fullWidth
         size="small"
