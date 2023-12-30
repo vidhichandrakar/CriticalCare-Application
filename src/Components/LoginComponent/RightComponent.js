@@ -7,37 +7,30 @@ import RightSignup from "../SignupComponent/RightSignup";
 import EmailLoginOption from "./RightLoginSteps/EmailLoginOption";
 import PhoneNoVerification from "./RightLoginSteps/PhoneNoVerification";
 
-const RightComponent = ({}) => {
-  const [loginOption, setLoginOption] = useState("");
-  const [loginValue, setLoginValue] = useState("");
-  const handleLoginOption = (type, value) => {
-    console.log("value", value, type);
-    setLoginOption(type);
+ const RightComponent =({})=>{
+  const [loginOption,setLoginOption] = useState("loggIn");
+  const [loginValue,setLoginValue]=useState("");
+  const [cameFrom,setCameFrom] = useState("")
+  const handleLoginOption =(type,value,path="")=>{
+     setLoginOption(type);
     setLoginValue(value);
-  };
+    setCameFrom(path);
 
-  return (
+  }
+ 
+  return(
     <Box className="rightBox">
-      <Box className="rightTopBox">
-        <a href="/">
-          {" "}
-          <img src={Logo} className="rightLogo" />
-        </a>
-    </Box>
-      {loginOption === "PhoneNumber" ? (
-        <PhonneNumberLogin handleLoginOption={handleLoginOption} />
-      ) : loginOption === "getOtpPhone" || loginOption === "emailLoginOtp" ? (
-        <PhoneNoVerification
-          displayValue={loginValue}
-          handleLoginOption={handleLoginOption}
-        />
-      ) : loginOption === "continueOtp" ? (
-        <RightSignup handleLoginOption={handleLoginOption} />
-      ) : loginOption === "emailLogin" ? (
-        <EmailLoginOption handleLoginOption={handleLoginOption} />
-      ) : (
-        <FirstLoginOption handleLoginOption={handleLoginOption} />
-      )}
+      <Box className="rightTopBox" >
+      <a href="/"> <img src={Logo} className="rightLogo" /></a>
+      </Box>
+      {loginOption==="PhoneNumber" ? <PhonneNumberLogin handleLoginOption={handleLoginOption}/>
+      :loginOption==="getOtpPhone" || loginOption==="emailLoginOtp"?
+      <PhoneNoVerification displayValue={loginValue} handleLoginOption={handleLoginOption} cameFrom={cameFrom}/>:
+      loginOption==="continueOtp"?
+      <RightSignup handleLoginOption={handleLoginOption}/>
+      :loginOption==="emailLogin"?
+      <EmailLoginOption handleLoginOption={handleLoginOption}/>
+      :loginOption==="loggIn"?<FirstLoginOption handleLoginOption={handleLoginOption} loginOption={loginOption}/>:<FirstLoginOption handleLoginOption={handleLoginOption}/>}
     </Box>
   );
 };
