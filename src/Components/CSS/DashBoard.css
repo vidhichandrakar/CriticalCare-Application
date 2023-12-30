@@ -153,23 +153,38 @@ body {
   .main-container {
     grid-area: main;
     overflow-y: auto;
-    padding: 20px 20px;
     border-left: solid black 1px;
     border-right: solid black 1px;
 
   }
-
-  
   .main-title {
     display: flex;
     justify-content: space-between;
   }
-  
+  .homeImage{
+    display: flex; 
+    justify-content: center;
+    width:100%;
+  }
+  .homeImage img{
+    transform-style: preserve-3d;
+     height:48vh !important;
+    width: 80%;
+    z-index: 78 !important;
+  }
+  .Allcoursestext{
+    text-align: center;
+  }
   .main-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    margin: 15px 0;
+    margin: 15px 125px;
+  }
+  .cardImage{
+    border-radius: 7px;
+    height: 130px;
+    width: 100%;
   }
   
   .card {
@@ -178,41 +193,44 @@ body {
     justify-content: space-around;
     padding: 8px 15px;
     border-radius: 5px;
+    border: solid 2px black;
   }
-  
-  .card:first-child {
-    background-color: #2962ff;
-  }
-  
-  .card:nth-child(2) {
-    background-color: #ff6d00;
-  }
-  
-  .card:nth-child(3) {
-    background-color: #2e7d32;
-  }
-  
-  .card:nth-child(4) {
-    background-color: #d50000;
-  }
-  
-  .card-inner {
+  .cardDate{
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    margin-top: -15px;
+    border-bottom: solid 1.7px grey;
+  }
+  .margintoph1{
+    margin-top: 0;
+  }
+  .margintopp{
+    margin-top: -20px;
+  }
+  .card p{
+    font-size: 0.6rem;
+  }
+  .marginttoph2{
+    color: blue;
+    margin-top: 4px;
+    font-size: 1.2rem;
+  }
+  .CardButton{
+    display: flex;
     justify-content: space-between;
+    margin-top: -10px;
   }
+  .btn{
+    border: rgb(141 168 201);;
+    background-color: rgb(141 168 201);
+    border-radius: 9px;
+    color: blue;
+    padding: 6px 38px;
+    font-weight: 600;
+    /* font-size: 1rem; */
+  }
+ 
   
-  .card-inner > .card_icon {
-    font-size: 25px;
-  }
-  
-  .charts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 60px;
-    height: 300px;
-  }
   
   /* End Main  */
   
