@@ -129,7 +129,7 @@ export default function RightSignup({ handleLoginOption }) {
         variant="contained"
         disabled={formData.disabled}
         className="otpButton"
-        onClick={() => handleLoginOption("getOtpPhone", formData.number)}
+        onClick={() => handleLoginOption("getOtpPhone", formData.number,"signUp")}
       >
         Get OTP
       </Button>

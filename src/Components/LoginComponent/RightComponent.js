@@ -9,11 +9,14 @@ import PhoneNoVerification from "./RightLoginSteps/PhoneNoVerification";
 
  const RightComponent =({})=>{
   const [loginOption,setLoginOption] = useState("");
-  const [loginValue,setLoginValue]=useState("")
-  const handleLoginOption =(type,value)=>{
-    console.log("value",value,type)
+  const [loginValue,setLoginValue]=useState("");
+  const [cameFrom,setCameFrom] = useState("")
+  const handleLoginOption =(type,value,path="")=>{
+     console.log("valeu",value,type,path)
     setLoginOption(type);
-    setLoginValue(value)
+    setLoginValue(value);
+    setCameFrom(path);
+
   }
  
   return(
@@ -23,12 +26,12 @@ import PhoneNoVerification from "./RightLoginSteps/PhoneNoVerification";
       </Box>
       {loginOption==="PhoneNumber" ? <PhonneNumberLogin handleLoginOption={handleLoginOption}/>
       :loginOption==="getOtpPhone" || loginOption==="emailLoginOtp"?
-      <PhoneNoVerification displayValue={loginValue} handleLoginOption={handleLoginOption}/>:
+      <PhoneNoVerification displayValue={loginValue} handleLoginOption={handleLoginOption} cameFrom={cameFrom}/>:
       loginOption==="continueOtp"?
       <RightSignup handleLoginOption={handleLoginOption}/>
       :loginOption==="emailLogin"?
       <EmailLoginOption handleLoginOption={handleLoginOption}/>
-      :<FirstLoginOption handleLoginOption={handleLoginOption}/>}
+      :loginOption==="loggIn"?<FirstLoginOption handleLoginOption={handleLoginOption} loginOption={loginOption}/>:<FirstLoginOption handleLoginOption={handleLoginOption}/>}
     </Box>
   )
 }

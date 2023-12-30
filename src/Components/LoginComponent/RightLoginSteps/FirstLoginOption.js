@@ -13,7 +13,7 @@ import RightTextBox from "./RightTextBox";
 //     },
 //   },
 // });
-const FirstLoginOption =({handleLoginOption})=>{
+const FirstLoginOption =({handleLoginOption,loginOption})=>{
   return(
     <>
     <RightTextBox/>
