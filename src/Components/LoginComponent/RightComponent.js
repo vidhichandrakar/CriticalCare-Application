@@ -1,19 +1,18 @@
 import React, { Fragment, useState } from "react";
 import { Box, Typography } from "@mui/material";
-import Logo from "../../Images/Logo.png"
+import Logo from "../../Images/Logo.png";
 import FirstLoginOption from "./RightLoginSteps/FirstLoginOption";
 import PhonneNumberLogin from "./RightLoginSteps/PhoneNumberLogin";
-import RightSignup from "../SignupComponent/RightSignup"
+import RightSignup from "../SignupComponent/RightSignup";
 import EmailLoginOption from "./RightLoginSteps/EmailLoginOption";
 import PhoneNoVerification from "./RightLoginSteps/PhoneNoVerification";
 
  const RightComponent =({})=>{
-  const [loginOption,setLoginOption] = useState("");
+  const [loginOption,setLoginOption] = useState("loggIn");
   const [loginValue,setLoginValue]=useState("");
   const [cameFrom,setCameFrom] = useState("")
   const handleLoginOption =(type,value,path="")=>{
-     console.log("valeu",value,type,path)
-    setLoginOption(type);
+     setLoginOption(type);
     setLoginValue(value);
     setCameFrom(path);
 
@@ -33,6 +32,6 @@ import PhoneNoVerification from "./RightLoginSteps/PhoneNoVerification";
       <EmailLoginOption handleLoginOption={handleLoginOption}/>
       :loginOption==="loggIn"?<FirstLoginOption handleLoginOption={handleLoginOption} loginOption={loginOption}/>:<FirstLoginOption handleLoginOption={handleLoginOption}/>}
     </Box>
-  )
-}
+  );
+};
 export default RightComponent;

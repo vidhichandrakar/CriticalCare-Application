@@ -7,12 +7,13 @@ import Menu from '@mui/material/Menu';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 function Header({OpenSidebar}) {
   const [anchorElUser, setAnchorElUser] = useState(null);
 
     
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['Profile', 'Logout'];
 
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
@@ -29,14 +30,13 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
         <div className='menu-icon'>
             <BsJustify className='icon' onClick={OpenSidebar}/>
         </div>
-        <div className='header-left'>
-            
-        </div>
+        
         <div className='header-right'>
-        <Box sx={{ flexGrow: 0, color: 'black' }}>
+        <Box sx={{ flexGrow: 0, color: 'black' }} className="ProfileName">
+          <p>Hi, Sheikh </p>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-              Hi, Sheikh <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, color: "Black" }}>
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> <KeyboardArrowDownIcon />
               </IconButton>
             </Tooltip>
             <Menu
@@ -55,11 +55,12 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+              {/* {settings.map((setting) => ( */}
+                <MenuItem  onClick={handleCloseUserMenu} className='ProfileSetting'>
+                  <Typography textAlign="center">Profile</Typography>
+                  <Typography textAlign="center" className='red'>Logout</Typography>
                 </MenuItem>
-              ))}
+              {/* ))} */}
             </Menu>
           </Box>
         
