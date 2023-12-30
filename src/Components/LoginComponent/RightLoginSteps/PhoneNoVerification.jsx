@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 // import "./../CSS/Login.css";
 import Button from "@mui/material/Button";
 
-const PhoneNoVerification = ({displayValue,handleLoginOption}) => {
+const PhoneNoVerification = ({displayValue,handleLoginOption,cameFrom}) => {
   const [otpValue,setOtp] = useState({ value: '', otp1: "", otp2: "", otp3: "", otp4: "", otp5: "",otp6:"", disable: true });
   const handleOtp = (type,value)=>{
    let prevOtp = {...otpValue};
@@ -106,7 +106,7 @@ const PhoneNoVerification = ({displayValue,handleLoginOption}) => {
           fullWidth
           disabled={otpValue.disable}
           className="continueButton"
-          onClick={()=>handleLoginOption("continueOtp")}
+          onClick={()=>handleLoginOption(cameFrom==="signUp"?"loggIn":"continueOtp")}
         >
           <p> Continue </p>
         </Button>
