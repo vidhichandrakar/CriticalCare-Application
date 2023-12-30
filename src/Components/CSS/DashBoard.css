@@ -182,7 +182,7 @@ body {
     margin: 15px 125px;
   }
   .cardImage{
-    border-radius: 7px;
+    border-radius: 5px;
     height: 130px;
     width: 100%;
   }
@@ -191,14 +191,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 8px 15px;
+    padding: 16px 15px;
     border-radius: 5px;
-    border: solid 2px black;
+    /* border: solid 2px black; */
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
   }
   .cardDate{
     display: flex;
     flex-direction: row;
-    margin-top: -15px;
+    margin-top: -25px;
     border-bottom: solid 1.7px grey;
   }
   .margintoph1{
@@ -206,12 +207,15 @@ body {
   }
   .margintopp{
     margin-top: -20px;
+    font-size: 0.63rem;
   }
   .card p{
     font-size: 0.6rem;
+    display: flex;
+    align-items: center;
   }
   .marginttoph2{
-    color: blue;
+    color: #0075FF;
     margin-top: 4px;
     font-size: 1.2rem;
   }
@@ -220,14 +224,25 @@ body {
     justify-content: space-between;
     margin-top: -10px;
   }
+  .bluecolor{
+    background-color: #a9cffae6 !important;
+    color: #0075FF !important;
+  }
   .btn{
     border: rgb(141 168 201);;
-    background-color: rgb(141 168 201);
+    background-color: #0075FF;
     border-radius: 9px;
-    color: blue;
-    padding: 6px 38px;
-    font-weight: 600;
+    color: white;
+    padding: 8px 38px;
+    font-weight: 700;
     /* font-size: 1rem; */
+  }
+  .iconStudent{
+    width: 5% !important;
+  }
+  .iconDate{
+    width: 10% !important;
+    /* margin: 0 10px 0 4px !important; */
   }
  
   
