@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 import Logo from "../../../Images/Logo.png"
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import ChatIcon from '@mui/icons-material/Chat';
@@ -21,9 +21,9 @@ function SideBar({openSidebarToggle, OpenSidebar}) {
 
         <ul className='sidebar-list'>
             <li className='sidebar-list-item BottomLine'>
-                <a href="">
+                <Link to="/AllCourses">
                     <MenuBookIcon className='icon'/> All Courses
-                </a>
+                </Link>
             </li>
             <li className='sidebar-list-item BottomLine'>
                 <a href="">
@@ -31,24 +31,24 @@ function SideBar({openSidebarToggle, OpenSidebar}) {
                 </a>
             </li>
             <li className='sidebar-list-item BottomLine'>
-                <a href="">
+                <Link to="/AboutUs">
                     <InfoIcon className='icon'/> About Us
-                </a>
+                </Link>
             </li>
             <li className='sidebar-list-item BottomLine'>
-                <a href="">
+                <Link to="/ContactUs">
                     <PhoneIcon  className='icon'/> Contact Us
-                </a>
+                </Link>
             </li>
             <li className='sidebar-list-item BottomLine'>
-                <a href="">
+                <Link to="/PrivacyPolicy">
                     <VerifiedUserIcon className='icon'/> Privacy Policy
-                </a>
+                </Link>
             </li>
             <li className='sidebar-list-item BottomLine'>
-                <a href="">
+                <Link to="/Terms&Conditions">
                     <DescriptionIcon className='icon'/> Terms & Conditions
-                </a>
+                </Link>
             </li>
             <li className='sidebar-list-item red'>
                 <a href="">
