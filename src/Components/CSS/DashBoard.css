@@ -173,6 +173,7 @@ body {
     z-index: 78 !important;
   }
   .Allcoursestext{
+    margin: 50px;
     text-align: center;
   }
   .main-cards {
@@ -248,6 +249,15 @@ body {
   
   
   /* End Main  */
+  
+  /* start Allcourse */
+
+  .BtnPadding{
+    padding: 8px 115px;
+  }
+ 
+
+  /* End Allcourse */
   
   
   /* Medium <= 992px */
