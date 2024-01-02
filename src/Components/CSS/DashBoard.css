@@ -187,6 +187,7 @@ body {
     height: 130px;
     width: 100%;
   }
+ 
   
   .card {
     display: flex;
@@ -344,8 +345,6 @@ box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
 }
 
 .headerWallpaper{
-  /* width: 20%; */
-  /* height: 60%; */
   margin-top: 4%;
 }
 
@@ -353,12 +352,13 @@ box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
   align-items: left !important;
   text-align: left !important;
   justify-content: left !important;
-  margin-left: -65%;
+  margin-left: -60%;
   margin-top: 5%;
 }
 
-.aboutBatch h1{
-  /* font-size: x-large; */
+.aboutBatchPara{
+  font-size: x-large;
+  color: rgb(82, 79, 79);
   /* font-weight: bold; */
 }
 
@@ -415,6 +415,132 @@ box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
 
 
   /* END EXPLORE CSS */
+ /* START OF JOIN NOW  */
+
+
+ .thirdBoxOfJoinNow{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 14vh;
+  width: 100%;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important; 
+  margin-top: 3%;
+ }
+.thirdBoxOfJoinNow button{
+  font-size: x-large;
+  font-weight: bolder;
+  padding: 2px 43px;
+  margin: 16px 721px;
+  margin-right: -4%;
+  /* float: right; */
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
+  border-radius: 4%;
+}
+
+
+  /* END OF JOIN NOW  */
+
+
+
+
+  /*Start BuyNow */
+
+  .BuyNow-box{
+    margin: 50px;
+  }
+  .textcenter{
+    text-align: left;
+    margin-left: 130px;
+  }
+  .InnerCardColumn{
+    display: flex;
+    flex-direction: row;
+  }
+  .cardImageBuyNow{
+    border-radius: 5px;
+    height: 80px;
+    width: 40%;
+    margin-bottom: 15px;
+  }
+  .textCart{
+    font-size: 1.5rem;
+  }
+  .BuyNow-main-cards {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    /* margin: 15px 125px; */
+  }
+  
+  .BuyNow-item-card {
+    display: flex;
+    flex-direction: column;;
+    padding: 0px 15px; /* border: solid 2px black; */
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
+    border-radius: 10px;
+    width: 50%;
+    height: 25vh;
+  }
+  .textRight{
+    font-size: 0.8rem;
+    margin-left: 20px;
+    margin-top: -10px;
+  }
+  .textMargintop{
+    margin-top: -8px;
+    color: #0075FF;
+  }
+  .Cuppon-card{
+    display: flex;
+    flex-direction: column;;
+    padding: 0px 15px; /* border: solid 2px black; */
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
+    border-radius: 10px;
+    width: 25%;
+    margin-left: 24px;
+    padding-bottom: 20px;
+  }
+  .Cuppon-text{
+    text-align: center;
+    font-size: 1.2rem
+  }
+  .Cuppon-button-box{
+    display: flex;
+    flex-direction: row;
+   padding-bottom: 12px;
+    border-bottom: solid 1px grey;
+  }
+  .TextfieldPadding{
+    padding: 12px 2px !important;
+  }
+  .FLexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .PaymentSummary{
+    border-bottom: solid 1px grey;
+    margin-top: -10px;
+  }
+  .green{
+    color: green !important;
+  }
+  .PaymentSummary p{
+    color: rgb(77, 77, 77);
+    margin-top: -10px;
+  }
+  .Total{
+    margin-top: -8px;
+  }
+  
+  /* End BuyNow */
+  
   
   /* Medium <= 992px */
     
