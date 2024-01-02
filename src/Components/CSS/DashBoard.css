@@ -173,6 +173,7 @@ body {
     z-index: 78 !important;
   }
   .Allcoursestext{
+    margin: 50px;
     text-align: center;
   }
   .main-cards {
@@ -186,6 +187,7 @@ body {
     height: 130px;
     width: 100%;
   }
+ 
   
   .card {
     display: flex;
@@ -248,6 +250,296 @@ body {
   
   
   /* End Main  */
+  
+  /* start Allcourse */
+
+  .BtnPadding{
+    padding: 8px 115px;
+  }
+ 
+
+  /* End Allcourse */
+   
+
+
+  /* START EXPLORE CSS */
+
+
+
+.completeOverview{
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 40px 100px !important;
+}
+
+
+.blueContainer{
+height: 100px;
+width: 100%;
+background-color: #0075FF;
+color: aliceblue;
+text-align: left !important;
+justify-content: center !important;
+align-items: center !important;
+border-top-right-radius: 25px;
+border-top-left-radius: 25px;
+box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
+}
+
+.blueContainer h1{
+  font-size:xx-large;
+  margin-left: 2%;
+}
+
+.whiteContainer{
+  font-size: x-large;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: #FFFFFF;
+  margin-top: 0% !important;
+  height: 6.9vh;
+  width: 100%;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
+}
+
+.overview{
+  text-decoration: underline;
+  color: #0075FF;
+  padding: 0 15px;
+}
+
+.content{
+ justify-content: right; 
+ padding: 0 32px;
+ } 
+
+
+.price{
+  color: #0075FF;
+  text-align: left !important;
+}
+
+.thirdBox{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 14vh;
+  width: 100%;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important; 
+  margin-top: 3%;
+}
+
+.thirdBox button{
+  font-size: x-large;
+  font-weight: bolder;
+  padding: 2px 43px;
+  margin: 16px 441px;
+  margin-right: -4%;
+  /* float: right; */
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
+  border-radius: 4%;
+}
+
+.headerWallpaper{
+  margin-top: 4%;
+}
+
+.aboutBatch{
+  align-items: left !important;
+  text-align: left !important;
+  justify-content: left !important;
+  margin-left: -60%;
+  margin-top: 5%;
+}
+
+.aboutBatchPara{
+  font-size: x-large;
+  color: rgb(82, 79, 79);
+  /* font-weight: bold; */
+}
+
+.knowYourTeacher{
+  justify-content: left !important;
+  align-items: left !important;
+  margin-left: -45%;
+  margin-top: 5%;
+}
+
+.knowYourTeacher img{
+  height:50%;
+   width:30%;
+   box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
+}
+
+.glassmorphism{
+  /* position: absolute; */
+  /* z-index: -10; */
+  height: 10%;
+  width: 19%;
+  /* background-color: rgba(255, 255, 255, 0.5) !important; */
+  background-color:#d3d3d300 !important;
+}
+
+.aboutCourse{
+ margin: 7% 4%;
+}
+
+.aboutCourse p{
+  font-size: x-large;
+  color: rgb(82, 79, 79);
+}
+
+.aYearValidity{
+  display: flex;
+  flex-direction: row;
+  justify-content: left !important;
+  align-items: left !important;
+}
+
+.learningMaterial{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.learningMaterial img{
+  height: 10%;
+  width: 10%;
+}
+
+
+
+
+  /* END EXPLORE CSS */
+ /* START OF JOIN NOW  */
+
+
+ .thirdBoxOfJoinNow{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 14vh;
+  width: 100%;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important; 
+  margin-top: 3%;
+ }
+.thirdBoxOfJoinNow button{
+  font-size: x-large;
+  font-weight: bolder;
+  padding: 2px 43px;
+  margin: 16px 721px;
+  margin-right: -4%;
+  /* float: right; */
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
+  border-radius: 4%;
+}
+
+
+  /* END OF JOIN NOW  */
+
+
+
+
+  /*Start BuyNow */
+
+  .BuyNow-box{
+    margin: 50px;
+  }
+  .textcenter{
+    text-align: left;
+    margin-left: 130px;
+  }
+  .InnerCardColumn{
+    display: flex;
+    flex-direction: row;
+  }
+  .cardImageBuyNow{
+    border-radius: 5px;
+    height: 80px;
+    width: 40%;
+    margin-bottom: 15px;
+  }
+  .textCart{
+    font-size: 1.5rem;
+  }
+  .BuyNow-main-cards {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    /* margin: 15px 125px; */
+  }
+  
+  .BuyNow-item-card {
+    display: flex;
+    flex-direction: column;;
+    padding: 0px 15px; /* border: solid 2px black; */
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
+    border-radius: 10px;
+    width: 50%;
+    height: 25vh;
+  }
+  .textRight{
+    font-size: 0.8rem;
+    margin-left: 20px;
+    margin-top: -10px;
+  }
+  .textMargintop{
+    margin-top: -8px;
+    color: #0075FF;
+  }
+  .Cuppon-card{
+    display: flex;
+    flex-direction: column;;
+    padding: 0px 15px; /* border: solid 2px black; */
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.352) !important;
+    border-radius: 10px;
+    width: 25%;
+    margin-left: 24px;
+    padding-bottom: 20px;
+  }
+  .Cuppon-text{
+    text-align: center;
+    font-size: 1.2rem
+  }
+  .Cuppon-button-box{
+    display: flex;
+    flex-direction: row;
+   padding-bottom: 12px;
+    border-bottom: solid 1px grey;
+  }
+  .TextfieldPadding{
+    padding: 12px 2px !important;
+  }
+  .FLexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .PaymentSummary{
+    border-bottom: solid 1px grey;
+    margin-top: -10px;
+  }
+  .green{
+    color: green !important;
+  }
+  .PaymentSummary p{
+    color: rgb(77, 77, 77);
+    margin-top: -10px;
+  }
+  .Total{
+    margin-top: -8px;
+  }
+  
+  /* End BuyNow */
   
   
   /* Medium <= 992px */

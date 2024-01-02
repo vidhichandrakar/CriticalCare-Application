@@ -7,6 +7,8 @@ import PrivacyPolicyService from '../Service/PrivacyPolicy.Service';
 import TermsAndCondition from '../Service/TermsAndCondition';
 import { HomeComponent } from '../../LoginComponent/HomeComponent';
 import history from './history';
+import BuyNow from '../AllCoursesService/BuyNow';
+
 
 function DashboardRouter({}) {
   return (
@@ -18,6 +20,7 @@ function DashboardRouter({}) {
             <Route exact path="/ContactUs" element= {<ContactService/>}> </Route>
             <Route exact path="/PrivacyPolicy" element= {<PrivacyPolicyService/>}> </Route>
             <Route exact path="/Terms&Conditions" element= {<TermsAndCondition/>}> </Route>
+            <Route exact path="/OrderSummary" element= {<BuyNow/>}> </Route>
         </Routes>
         </BrowserRouter>
         )}
