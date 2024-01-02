@@ -3,11 +3,12 @@ import { Box, Typography } from "@mui/material";
 import LeftComponent from "./LeftComponents";
 import RightComponent from "./RightComponent";
 import "./../CSS/Login.css";
-
+import history from "../DashboardComponents/DashboardRouter/history";
 
 export const HomeComponent =({})=>{
+
   return(
-    <Box className="MainBox">
+    <Box className="MainBox"  >
       <Box className="loginBox">
         <LeftComponent/>
         <RightComponent/>

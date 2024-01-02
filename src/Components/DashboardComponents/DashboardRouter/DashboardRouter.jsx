@@ -1,17 +1,16 @@
 import React from 'react'
 import DashboardMain from '../DashboardMain';
-import {BrowserRouters as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouters as Router, Routes, Route, BrowserRouter} from 'react-router-dom';
 import AboutService from '../Service/About.Service';
 import ContactService from '../Service/Contact.Service';
 import PrivacyPolicyService from '../Service/PrivacyPolicy.Service';
 import TermsAndCondition from '../Service/TermsAndCondition';
 import { HomeComponent } from '../../LoginComponent/HomeComponent';
+import history from './history';
 
-
-function DashboardRouter() {
+function DashboardRouter({}) {
   return (
-    <div>
-      {/* <Router> */}
+    <BrowserRouter history={history} >
         <Routes>
             <Route exact path="/" element= {<HomeComponent/>}> </Route>
             <Route exact path="/AllCourses" element= {<DashboardMain/>}> </Route>
@@ -20,9 +19,6 @@ function DashboardRouter() {
             <Route exact path="/PrivacyPolicy" element= {<PrivacyPolicyService/>}> </Route>
             <Route exact path="/Terms&Conditions" element= {<TermsAndCondition/>}> </Route>
         </Routes>
-      {/* </Router> */}
-    </div>
-  )
-}
-
-export default DashboardRouter
+        </BrowserRouter>
+        )}
+export default DashboardRouter;

@@ -4,6 +4,7 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 // import "./../CSS/Login.css";
 import Button from "@mui/material/Button";
+import history from "../../DashboardComponents/DashboardRouter/history";
 
 const PhoneNoVerification = ({displayValue,handleLoginOption,cameFrom}) => {
   const [otpValue,setOtp] = useState({ value: '', otp1: "", otp2: "", otp3: "", otp4: "", otp5: "",otp6:"", disable: true });
@@ -18,8 +19,12 @@ const PhoneNoVerification = ({displayValue,handleLoginOption,cameFrom}) => {
     }
     setOtp( prevOtp);
   }
+  const handleClick =()=>{
+    history.push({pathname:"/AllCourses"});
+    window.location.reload();
+  }
   const handleLoginType=()=>{
-    cameFrom!=="signUp"?handleLoginOption(cameFrom==="signUp"?"loggIn":"continueOtp"):window.location.href="AllCourses"
+    cameFrom!=="signUp"?handleLoginOption(cameFrom==="signUp"?"loggIn":"continueOtp"):handleClick()
   }
   return (
     <>
