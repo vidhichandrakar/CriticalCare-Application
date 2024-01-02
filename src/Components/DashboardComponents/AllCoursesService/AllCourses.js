@@ -38,6 +38,79 @@ function AllCourses() {
               <Link to="/OrderSummary"><button className="btn">BUY NOW</button></Link>
             </div>
           </div>
+          <div className="card">
+            <img src={HomeImage} className="cardImage" />
+            <h1 className="margintoph1">IOQM 2024</h1>
+            <div >
+              <p className="margintopp">
+                <Person4OutlinedIcon  className="iconStudent"/>
+                Targeted batch for MS Students
+              </p>
+            </div>
+            <div className="cardDate">
+              <p>
+                <CalendarMonthIcon className="iconDate"/>Starts on <span>15 DEC 2023</span>
+              </p>
+              <p>
+                <FiberManualRecordIcon className="iconDate"/> Ends on <span>15 DEC 2023</span>
+              </p>
+            </div>
+
+            <h2 className="marginttoph2">$15000</h2>
+            <div className="CardButton">
+              <button className="btn bluecolor">EXPLORE </button>
+              <Link to="/OrderSummary"><button className="btn">BUY NOW</button></Link>
+            </div>
+          </div>
+          <div className="card">
+            <img src={HomeImage} className="cardImage" />
+            <h1 className="margintoph1">IOQM 2024</h1>
+            <div >
+              <p className="margintopp">
+                <Person4OutlinedIcon  className="iconStudent"/>
+                Targeted batch for MS Students
+              </p>
+            </div>
+            <div className="cardDate">
+              <p>
+                <CalendarMonthIcon className="iconDate"/>Starts on <span>15 DEC 2023</span>
+              </p>
+              <p>
+                <FiberManualRecordIcon className="iconDate"/> Ends on <span>15 DEC 2023</span>
+              </p>
+            </div>
+
+            <h2 className="marginttoph2">$15000</h2>
+            <div className="CardButton">
+              <button className="btn bluecolor">EXPLORE </button>
+              <Link to="/OrderSummary"><button className="btn">BUY NOW</button></Link>
+            </div>
+          </div>
+          <div className="card">
+            <img src={HomeImage} className="cardImage" />
+            <h1 className="margintoph1">IOQM 2024</h1>
+            <div >
+              <p className="margintopp">
+                <Person4OutlinedIcon  className="iconStudent"/>
+                Targeted batch for MS Students
+              </p>
+            </div>
+            <div className="cardDate">
+              <p>
+                <CalendarMonthIcon className="iconDate"/>Starts on <span>15 DEC 2023</span>
+              </p>
+              <p>
+                <FiberManualRecordIcon className="iconDate"/> Ends on <span>15 DEC 2023</span>
+              </p>
+            </div>
+
+            <h2 className="marginttoph2">$15000</h2>
+            <div className="CardButton">
+              <button className="btn bluecolor">EXPLORE </button>
+              <Link to="/OrderSummary"><button className="btn">BUY NOW</button></Link>
+            </div>
+          </div>
+          
           </div>
       </section>
     </main>

@@ -5,7 +5,7 @@
 }
 .contactUsHeading{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 500%;
+    font-size: 2em !important;
     margin-top: 3%;
 }
 .contactHeading{
@@ -20,9 +20,8 @@
 
 .contactUs1{
      text-align: left;
-     padding: 2% 2%;
      font-family:Arial, Helvetica, sans-serif;
-     font-size:xx-large;
+     font-size:1.3em !important;
 }
 
 .contactUs2_1{
@@ -30,7 +29,6 @@
     flex-direction: column;
     width: 39%;
      text-align: left;
-     padding: 2% 2%;
      font-family:Arial, Helvetica, sans-serif;    
      font-size: small;
 }
@@ -41,27 +39,26 @@
 }
 
 .text{
-    font-size: xx-large;
+    font-size: 1.3em !important;
 }
 
 .criticalCareHead2_1{
     /* font-size: 495%; */
-    font-size: 400%;
+    font-size: 2em !important;
 }
 
 .contactEmailId{
     /* padding: 0%; */
     margin-top: 5%;
-    font-size: xx-large;
-    padding: 0px 0px;
-    width: 96%;
+    font-size: 0.8em !important;
+    width: 68%;
     
 }
 
 .getDirectionBox {
-    margin: 14px 150px;
+    margin: 11px 12px;
     /* margin-left: 0% !important; */
-    padding: 17px 50px;
+    padding: 8px 14px;
     align-items: left;
     justify-content: left;
     text-align: center;
@@ -69,8 +66,8 @@
     /* margin-top: 2%; */
     border-radius: 12px;
     margin-left: 0%;
-    width: 84%;
-    font-size: xx-large;
+    width: 68%;
+    font-size: 1em !important;
 }
 
 
@@ -78,17 +75,16 @@
 .fAQSection{
     margin-top: 1%;
     text-align: left;
-    padding: 2% 2%;
     font-family:Arial, Helvetica, sans-serif;
 }
 
 .fAQHeading{
-    font-size: 480%;
+    font-size: 2em !important;
 }
 
 .qna{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: xx-large;
+    font-size: 1.3em !important;
 }
 
 .line{

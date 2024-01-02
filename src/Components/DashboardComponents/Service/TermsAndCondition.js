@@ -21,16 +21,12 @@ function TermsAndCondition() {
       <div className="text">
         <h1>{TermsData.one.topic}</h1>
         <p>{TermsData.one.detail}</p>
-      </div>
-      <div className="text">
         <h1>{TermsData.two.topic}</h1>
         <p>{TermsData.one.detail}</p>
-      </div>
-      <div className="text">
+     
         <h1>{TermsData.three.topic}</h1>
         <p>{TermsData.one.detail}</p>
-      </div>
-      <div className="text">
+      
         <h1>{TermsData.four.topic}</h1>
         <p >{TermsData.one.detail}</p>
       </div>

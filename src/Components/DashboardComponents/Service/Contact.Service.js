@@ -55,7 +55,7 @@ function ContactService() {
         <hr />
 
         <span className="contactUs2_1">
-          <div><h2 className="criticalCareHead2_1">360 Critical Care</h2></div>
+        <h2 className="criticalCareHead2_1">360 Critical Care</h2>
 
         <div className="text">
           <div>KLJ Noida one</div>
